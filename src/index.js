@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
 
 // TODO: replace this with env variable
-const API_KEY = 'AIzaSyDZkJ3CIluXPodrE7m7v_jl_hjvlRK6zEU';
+const API_KEY = 'AIzaSyATjBoSbI7q-QahnXtT63pa0p1Zdw-40cc';
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class App extends Component {
 
     this.state = { videos: [] };
 
-    YTSearch({ key: API_KEY, term: 'test' }, videos => {
+    YTSearch({ key: API_KEY, term: 'surfboards' }, videos => {
       this.setState({ videos });
     });
   }
