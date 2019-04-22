@@ -20,6 +20,8 @@ class App extends Component {
   }
 
   render() {
+    const {videos, selectedVideo} = this.state;
+
     return (
       <div>
         <SearchBar />
