@@ -1,25 +1,27 @@
-# ReduxSimpleStarter
+# YouTube Searcher
+[![Netlify Status](https://api.netlify.com/api/v1/badges/513459bc-b1bc-4ada-b0f8-b3662cf38d41/deploy-status)](https://app.netlify.com/sites/201905-youtube-search/deploys)
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This app is one of my hobby using React.
 
-### Getting Started
+[Live Online](https://youtube-search.oootoko.net)
 
-There are two methods for getting started with this repo.
+## Development
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+_Note that API_KEY should be replaced with your [YouTube Data API V3 Access Key](https://console.developers.google.com/apis/credentials)_
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
+```sh
+$ yarn
+$ yarn start --define process.env.API='"API_KEY"'
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+## Deployment
 
+```sh
+$ yarn build --define process.env.API='"API_KEY"'
 ```
-> npm install
-> npm start
-```
+
+You can build your own server or use a web deployment service like [Netlify](https://www.netlify.com/)
+
+## TODO
+
+- [ ] Update or replace packages and settings
